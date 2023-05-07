@@ -102,11 +102,70 @@ header {
   color: var(--color-text-dark);
 }
 
-.form-task-input {
+.form-group, .tasks-container {
+  display: flex;
+  justify-content: space-between;
+}
 
+.form-task-input {
+  width: 70%;
+  padding-left: 5vw
+  font-size: 1em
 }
 
 .form-task-button {
-  
+  background-color: var(--color-brand-secondary)
+  border: none;
+  width: 10%;
+  border-radius: 10%;
 }
 
+.add-button {
+  color: var(--color-common-light);
+  font-size: 2em;
+}
+
+.checkbox-group {
+  width: 100%;
+  background-color: var(--color-common-light);
+  border-radius: 0 3vw 0 0;
+  height: 80vh
+}
+
+.task-added {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-default);
+  border-bottom: 1px solid var(--color-interface-dark);
+  margin: 3vh auto;
+  width: 90%;
+  background-color: var(--color-common-light);
+  border-radius: 3vw;
+}
+
+.task-done {
+  color: var(--color-common-dark)
+  text-decoration: line-through;
+  font-size: 1em;
+  font-weight: 600;
+  display: inline-block;
+  width: 80%;
+  margin-left: 2vw;
+}
+
+.task-done:hover {
+  color: var(--color-brand-secondary);
+  cursor: pointer;
+}
+
+.task-done:hover .task-icons {
+  color: var(--color-brand-secondary);
+  cursor: pointer;
+}
+
+.task-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+}
