@@ -94,6 +94,7 @@ header {
   width: 35px;
   height: 35px;
   border-radius: 50%;
+  cursor: pointer;
   margin-right: var(--spacing-small);
 }
 
@@ -147,7 +148,6 @@ header {
   font-weight: 600;
   cursor: pointer;
   margin: 0 auto;
-  width: 90%;
   background-color: var(--color-brand-secondary);
   border-radius: 3vw;
   padding: var(--spacing-default);
@@ -215,4 +215,8 @@ header {
   overflow-y: scroll;
   padding: var(--spacing-default);
   margin: 0 auto;
+}
+
+.checkbox-group::-webkit-scrollbar {
+  width: 0.5em;
 }
