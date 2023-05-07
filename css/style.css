@@ -146,12 +146,16 @@ header {
 
 .task-done {
   color: var(--color-common-dark)
-  text-decoration: line-through;
   font-size: 1em;
   font-weight: 600;
   display: inline-block;
   width: 80%;
   margin-left: 2vw;
+}
+
+#task-done {
+  text-decoration: line-through;
+  color: var(--color-brand-secondary);
 }
 
 .task-done:hover {
