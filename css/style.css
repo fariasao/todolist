@@ -191,7 +191,7 @@ header {
 
 #task-done {
   text-decoration: line-through;
-  color: var(--color-brand-secondary);
+  color: var(--color-feedback-success);
 }
 
 .task-done:hover {
